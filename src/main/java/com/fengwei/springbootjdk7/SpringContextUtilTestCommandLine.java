@@ -14,7 +14,7 @@ public class SpringContextUtilTestCommandLine implements ApplicationRunner {
     public void run(String... args) throws Exception {
         try {
             log.info("+++++++++++++++++begin");
-            Springbootjdk7Application bean = SpringContextUtil.getBean(Springbootjdk7Application.class);
+            ApiLogTestController bean = SpringContextUtil.getBean(ApiLogTestController.class);
             log.info("+++++++++++++++++" + bean.toString());
         } catch (Exception e) {
             log.error("error", e);

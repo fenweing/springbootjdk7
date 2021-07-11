@@ -33,11 +33,11 @@ public class ApiLogTestController {
     public String rmTest(@RequestBody List<Map> list, HttpServletRequest request, HttpServletResponse response) {
         return JsonUtil.toString(list);
     }
-    @Autowired
-    SpringContextUtilTestCommandLine commandLine;
-    @GetMapping("/testContext")
-    public String testContext(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        SpringContextUtil.getBean(SpringContextUtilTestCommandLine.class).run();
-        return "ret";
-    }
+//    @Autowired
+//    SpringContextUtilTestCommandLine commandLine;
+//    @GetMapping("/testContext")
+//    public String testContext(HttpServletRequest request, HttpServletResponse response) throws Exception {
+//        SpringContextUtil.getBean(SpringContextUtilTestCommandLine.class).run();
+//        return "ret";
+//    }
 }
